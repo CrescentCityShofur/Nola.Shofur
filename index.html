@@ -7,12 +7,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     
-    <style>
+        <style>
         body { 
             font-family: 'Montserrat', sans-serif; 
             background-color: #0a0118;
-            /* This line connects to the file you uploaded */
-            background-image: linear-gradient(rgba(10,1,24,0.3), rgba(10,1,24,0.3)), url('nola.png');
+            /* This is the magic line that pulls in your uploaded nola.png */
+            background-image: linear-gradient(rgba(10,1,24,0.5), rgba(10,1,24,0.5)), url('nola.png');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -21,6 +21,7 @@
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
+            margin: 0;
         }
 
         .gold-shimmer {
@@ -30,7 +31,7 @@
             -webkit-text-fill-color: transparent;
         }
 
-        /* Highly transparent "Glass" effect to show your image */
+        /* This makes your boxes "Glassy" so you can see the NOLA background through them */
         .glass-panel {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
@@ -39,15 +40,10 @@
             border-radius: 30px;
             width: 90%;
             max-width: 450px;
-        }
-
-        .input-style {
-            background: rgba(0, 0, 0, 0.4);
-            border: 1px solid rgba(252, 246, 186, 0.3);
-            color: white;
-            border-radius: 12px;
+            padding: 2rem;
         }
     </style>
+
 </head>
 <body>
 
